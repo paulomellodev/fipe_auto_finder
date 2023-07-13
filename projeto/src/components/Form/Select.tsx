@@ -26,7 +26,6 @@ const SelectInputBase: ForwardRefRenderFunction<
   ref
 ) => {
   const handleChange = (event: any) => {
-    console.log(event);
     dispatch(thunkFunction(event.target.value));
   };
 

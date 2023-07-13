@@ -43,7 +43,7 @@ export const selectModelThunk =
     if (!!fipeData.value.veiculo) {
       dispatch(resetVeiculo());
     }
-    console.log("thun-selection", codigoModel);
+
     dispatch(selectData({ codigo: codigoModel, stateKey: "modelo" }));
     dispatch(fetchAllYearsByModelAsync(codigoModel));
   };

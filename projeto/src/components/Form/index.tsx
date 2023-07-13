@@ -22,7 +22,7 @@ const Form = () => {
 
   const selectionValues = useSelector(selectSelection);
   const fipeValues = useSelector(selectFipeData);
-  console.log(!selectionValues.ano);
+
   return (
     <Stack spacing={1} direction="column" alignItems={"center"}>
       <SelectInput
