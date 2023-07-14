@@ -1,4 +1,4 @@
-import { ReduxState, ReduxThunkAction } from "@/redux/store";
+import { ReduxThunkAction } from "@/redux/store";
 
 import { resetSelection, selectData } from "./SelectionFipeDataSlice";
 import { resetDataByKey, resetVeiculo } from "../fipeDataSlice/fipeDataSlice";

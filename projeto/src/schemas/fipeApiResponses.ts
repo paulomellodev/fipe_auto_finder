@@ -3,15 +3,6 @@ export interface IBrandsModelsAndYear {
   nome: string;
 }
 
-export type TBrandsResponse = Array<IBrandsModelsAndYear>;
-
-export type TYearsResponse = Array<IBrandsModelsAndYear>;
-
-export type TModelsResponse = {
-  modelos: Array<IBrandsModelsAndYear>;
-  anos: Array<IBrandsModelsAndYear>;
-};
-
 export interface IVeiculo {
   TipoVeiculo: number;
   Valor: string;
@@ -23,6 +14,15 @@ export interface IVeiculo {
   MesReferencia: string;
   SiglaCombustivel: string;
 }
+
+export type TBrandsResponse = Array<IBrandsModelsAndYear>;
+
+export type TYearsResponse = Array<IBrandsModelsAndYear>;
+
+export type TModelsResponse = {
+  modelos: Array<IBrandsModelsAndYear>;
+  anos: Array<IBrandsModelsAndYear>;
+};
 
 export type TFipeDataSlice = {
   value: {

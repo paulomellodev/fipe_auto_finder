@@ -1,4 +1,4 @@
-export type SelectionFipeDataSliceState = {
+export type TSelectionFipeDataSliceState = {
   value: {
     marca: string;
     modelo: string;

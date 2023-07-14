@@ -1,14 +1,14 @@
 /* Core */
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
-import { SelectionFipeDataSliceState } from "@/schemas/SelectionDataSlice";
+import { TSelectionFipeDataSliceState } from "@/schemas/SelectionDataSlice";
 
 export type TSelectDataPayload = {
   codigo: string;
   stateKey: "marca" | "modelo" | "ano";
 };
 
-const initialState: SelectionFipeDataSliceState = {
+const initialState: TSelectionFipeDataSliceState = {
   value: {
     marca: "",
     modelo: "",
