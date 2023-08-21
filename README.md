@@ -1,5 +1,3 @@
-<h1 align="center">MobiAuto</h1>
-
 <div align="center">
 
 ![Next.js](https://img.shields.io/badge/Next-000?style=for-the-badge&logo=next.js&logoColor=) ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=fff) !
@@ -18,7 +16,7 @@
 
 Este projeto foi gerado com Next@13.4.9
 
-Projeto realizado como etapa do processo de recrutamento da empresa MobiAuto. Ele oferece funcionalidade de buscar o preço do veículo baseado na filtragem espeficidad pelo usuários.
+Projeto oferece funcionalidade de buscar o preço do veículo baseado na filtragem espeficidad pelo usuários.
 
 O aplicativo possui apenas duas páginas, a primeira com 3 campos de Select, nos quais os usuários escolherão informações do veículo que querem saber o preço. E a segunda página é onde mostrará o preço do veículo selecionado.
 
