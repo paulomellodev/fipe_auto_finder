@@ -1,12 +1,4 @@
 const getRickAndMortyCharacters = async () => {
-  const characters = {
-    "Rick Sanchez": "Rick Sanchez",
-    "Morty Smith": "Morty Smith",
-    "Summer Smith": "Summer Smith",
-    "Beth Smith": "Beth Smith",
-    "Jerry Smith": "Jerry Smith",
-  };
-
   const gender = {
     Male: "Homem",
     Female: "Mulher",
@@ -18,27 +10,20 @@ const getRickAndMortyCharacters = async () => {
   };
 
   try {
-    const response = await fetch("https://rickandmortyapi.com/api/character");
+    const response = await fetch(
+      "https://rickandmortyapi.com/api/character/1,2,3,4,5"
+    );
 
     const { results } = await response.json();
 
-    const result = results
-      .filter((character) => {
-        if (characters[character.name]) {
-          delete characters[character.name];
-          return true;
-        } else {
-          return false;
-        }
-      })
-      .map((character) => {
-        return {
-          nome: character.name,
-          genero: gender[character.gender],
-          avatar: character.image,
-          especie: species[character.species],
-        };
-      });
+    const result = results.map((character) => {
+      return {
+        nome: character.name,
+        genero: gender[character.gender],
+        avatar: character.image,
+        especie: species[character.species],
+      };
+    });
     return result;
   } catch (err) {
     throw new Error(err);

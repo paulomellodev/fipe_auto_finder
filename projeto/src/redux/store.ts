@@ -1,7 +1,6 @@
 /* Core */
 import {
   configureStore,
-  type ConfigureStoreOptions,
   type ThunkAction,
   type Action,
 } from "@reduxjs/toolkit";
